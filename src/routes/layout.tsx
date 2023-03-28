@@ -1,11 +1,13 @@
-import { component$, Slot } from '@builder.io/qwik';
+import { component$, Slot, useStylesScoped$ } from '@builder.io/qwik';
 // import { CustomFooter } from '../integrations/react/mui';
 // import Header from '../components/Header/header';
+import styles from '../components/Header/header.css?inline';
 // There are some building issues with Vercel
 // Please use these code instead of imported Header whenever you need to deploy on Vercel
 import { Link } from '@builder.io/qwik-city'
 
 export const Header = component$(() => {
+  useStylesScoped$(styles)
   const pages = [{ title: 'Sales', url: '/category/sales' } , { title: 'About us', url: '/about-us' }];
 
   return (
