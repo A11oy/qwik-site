@@ -1,0 +1,15 @@
+.product-tile {
+  width: 46%;
+  text-align: center;
+  height: 350px;
+  max-width: 350px;
+  border: 2px solid;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.product-tile img {
+  max-height: 250px;
+  margin: 0 auto;
+}

@@ -1,11 +1,12 @@
 import { component$, Slot } from '@builder.io/qwik';
-import { CustomHeader, CustomFooter } from '../integrations/react/mui';
+import { CustomFooter } from '../integrations/react/mui';
+import Header from '~/components/Header/Header';
 
 export default component$(() => {
   return (
     <>
       <main>
-        <CustomHeader />
+        <Header />
         <section>
           <Slot />
         </section>

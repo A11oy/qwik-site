@@ -5,7 +5,7 @@ import Typography from '@mui/joy/Typography';
 import Sheet from '@mui/joy/Sheet';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-function Footer() {
+function ReactFooter() {
   return (
     <Sheet
       variant="solid"
@@ -43,4 +43,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default ReactFooter;

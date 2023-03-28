@@ -1,12 +1,6 @@
 /** @jsxImportSource react */
 
 import { qwikify$ } from '@builder.io/qwik-react';
-import { Button, Slider } from '@mui/material';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import ReactFooter from './components/ReactFooter';
 
-export const MUIButton = qwikify$(Button);
-export const MUISlider = qwikify$(Slider, { eagerness: 'hover' });
-
-export const CustomHeader = qwikify$(Header)
-export const CustomFooter = qwikify$(Footer)
+export const CustomFooter = qwikify$(ReactFooter)

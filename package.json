@@ -21,9 +21,9 @@
     "qwik": "qwik"
   },
   "devDependencies": {
-    "@builder.io/qwik": "0.16.2",
-    "@builder.io/qwik-city": "0.0.128",
-    "@builder.io/qwik-react": "0.2.1",
+    "@builder.io/qwik": "^0.21",
+    "@builder.io/qwik-city": "^0.0.128",
+    "@builder.io/qwik-react": "^0.2.1",
     "@emotion/react": "11.10.4",
     "@emotion/styled": "11.10.4",
     "@mui/material": "5.10.10",
@@ -37,7 +37,7 @@
     "@typescript-eslint/parser": "5.48.0",
     "autoprefixer": "10.4.11",
     "eslint": "8.31.0",
-    "eslint-plugin-qwik": "0.16.2",
+    "eslint-plugin-qwik": "^0.16.2",
     "node-fetch": "3.3.0",
     "postcss": "^8.4.16",
     "prettier": "2.8.1",

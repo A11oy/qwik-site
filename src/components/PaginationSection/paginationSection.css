@@ -1,0 +1,20 @@
+.pagination ul {
+  display: flex;
+  list-style: none;
+}
+
+.pagination li {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.active {
+  font-weight: 800;
+  border-radius: 5px;
+  border: 2px solid;
+  padding: 10px 15px;
+}
+
+.pagination a {
+  color: black;
+}

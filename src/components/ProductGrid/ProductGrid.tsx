@@ -1,14 +1,24 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useTask$, useStyles$ } from '@builder.io/qwik';
+import PaginationSection from '../PaginationSection/PaginationSection';
 import { ProductTile } from '../ProductTile/ProductTile';
-import { data } from '../../data'
+import styles from './productGrid.css?inline'
 
-export default component$(() => {
-  const { pageItems } = data
+export default component$(({ itemsData, pagination }: any) => {
+  useStyles$(styles)
+  useTask$(() => console.log('runs in the browser'), {
+    eagerness: 'visible', // 'load' | 'visible' | 'idle'
+  });
+
   return (
-    <div style="display: flex; max-width: 100%; flex-wrap: wrap; align-content: space-between;">
-      {pageItems.map((item: any, i: number) => {
-        return <ProductTile key={i} item={item}/>
-      })}
+    <div class="category-container">
+      <div class="product-grid">
+        {itemsData.map((item: any, i: number) => {
+          return <ProductTile key={i} item={item} />
+        })}
+      </div>
+      <PaginationSection
+        pagination={pagination}
+      />
     </div>
   );
 });
